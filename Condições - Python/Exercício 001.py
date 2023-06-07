@@ -26,4 +26,8 @@ ativ = ativ * 0.3
 
 media = (prova + projeto + ativ)
 
-print("Sua média é ", media)
+if media >= 7:
+    print("Sua média é", media, "você está aprovado.")
+else:
+    print("Sua média é:", media, "você foi reprovado.")
+    
