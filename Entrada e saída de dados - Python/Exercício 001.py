@@ -11,4 +11,4 @@ print("\n")
 
 media = (val1 + val2 + val3 + val4) / 4 
 
-print("A média destes produtos é: %.2f" %media, "\n")
+print("A média destes produtos é: %.2f" %media, ".\n")
