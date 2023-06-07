@@ -10,4 +10,20 @@ Atividades – peso 30%.
 Faça um programa para receber o nome da disciplina, as notas que o aluno obteve em cada atividade, 
 calcule e mostre a média final e o resultado: Aprovado ou Reprovado.'''
 
+
 disc = str (input("Nome da disciplina: "))
+print("\n")
+
+prova = float (input("Sua nota na prova: "))
+projeto = float (input("Sua nota no projeto: "))
+ativ = float (input("Sua nota nas atividades: "))
+
+print("\n")
+
+prova = prova * 0.45
+projeto = projeto * 0.25
+ativ = ativ * 0.3
+
+media = (prova + projeto + ativ)
+
+print("Sua média é ", media)
