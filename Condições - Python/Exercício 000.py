@@ -1,4 +1,4 @@
-print("\n\t - Exercício 1: \n")
+print("\n\t - Exercício 0: \n")
 
 '''Ler 4 valores:
    Calcular a média
