@@ -11,3 +11,4 @@ print("\n\t - Exercício 2: \n")
     De 35,0 a menor que 40,0 -> Obesidade Grau II (Severa)
     De 40,0 em diante -> Obesidade Grau III (Mórbida)'''
 
+peso = float (input("Informe o seu peso em kg"))
