@@ -16,3 +16,11 @@ o percentual de aumento aplicado;
 o valor do aumento;
 o novo salário, após o aumento.'''
 
+salario = int (input("Digite seu salário: "))
+
+if salario <= 280:
+    salario * 0,2
+
+if salario >= 280 and salario <= 700:
+    print("menos de 280")
+    
