@@ -1,7 +1,7 @@
 print("\n\t Exercício 11 \n")
 
 '''As Organizações Tabajara resolveram dar um aumento de salário aos seus colaboradores
- e lhe contraram para desenvolver o programa que calculará os reajustes.
+e lhe contraram para desenvolver o programa que calculará os reajustes.
 Faça um programa que recebe o salário de um colaborador e o reajuste segundo 
 o seguinte critério, baseado no salário atual:
 
@@ -39,7 +39,7 @@ if salario > 280 and salario <= 700:
     print("O valor do aumento é de: R$", valoraumento)
     print("Seu salário após o aumento é de: R$", ajustequinze, "\n")
 
-if salario > 700 and salario <= 1500:
+if salario > 700 and salario < 1500:
 
     ajustedez = (salario * 0.10) + salario
     valoraumento = salario * 0.10
@@ -48,3 +48,13 @@ if salario > 700 and salario <= 1500:
     print("O percentual de aumento do seu salário foi de: 10%")
     print("O valor do aumento é de: R$", valoraumento)
     print("Seu salário após o aumento é de: R$", ajustedez, "\n")
+
+if salario >= 1500:
+
+    ajustecinco = (salario * 0.05) + salario
+    valoraumento = salario * 0.05
+
+    print("Seu salário antes do reajuste era de: R$", salario)
+    print("O percentual de aumento do seu salário foi de: 5%")
+    print("O valor do aumento é de: R$", valoraumento)
+    print("Seu salário após o aumento é de: R$", ajustecinco, "\n")
