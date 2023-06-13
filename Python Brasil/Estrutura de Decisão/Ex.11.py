@@ -17,15 +17,14 @@ o valor do aumento;
 o novo salário, após o aumento.'''
 
 salario = int (input("Digite seu salário: "))
+print("\n")
 
 if salario <= 280:
-    salario = (salario * 0.2) + salario
-    print(salario)
-    
-if salario > 280 and salario <= 700:
-   salario = (salario * 0.15) + salario
-   print(salario)
 
-if salario >= 701 and salario <= 1500:
-    salario = (salario * 0.10) + salario
-    print(salario)
+    ajustevinte = (salario * 0.2) + salario
+    valoraumento = salario * 0.2
+
+    print("Seu salário antes do reajuste era de R$", salario)
+    print("O percentual de aumento foi de 20%")
+    print("o valor do aumento é de:", valoraumento)
+    print("Seu salário após o aumento é de R$", ajustevinte, "\n")
