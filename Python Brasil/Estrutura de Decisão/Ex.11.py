@@ -22,6 +22,6 @@ if salario <= 280:
     salario = (salario * 0.2) + salario
     print(salario)
     
-if salario >= 280 and salario <= 700:
+if salario > 280 and salario <= 700:
    salario = (salario * 0.15) + salario
    print(salario)
