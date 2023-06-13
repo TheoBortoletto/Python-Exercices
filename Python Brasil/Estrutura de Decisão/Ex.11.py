@@ -24,7 +24,27 @@ if salario <= 280:
     ajustevinte = (salario * 0.2) + salario
     valoraumento = salario * 0.2
 
-    print("Seu salário antes do reajuste era de R$", salario)
-    print("O percentual de aumento foi de 20%")
-    print("o valor do aumento é de:", valoraumento)
-    print("Seu salário após o aumento é de R$", ajustevinte, "\n")
+    print("Seu salário antes do reajuste era de: R$", salario)
+    print("O percentual de aumento do seu salário foi de: 20%")
+    print("O valor do aumento é de: R$", valoraumento)
+    print("Seu salário após o aumento é de: R$", ajustevinte, "\n")
+
+if salario > 280 and salario <= 700:
+
+    ajustequinze = (salario * 0.15) + salario
+    valoraumento = salario * 0.15
+
+    print("Seu salário antes do reajuste era de: R$", salario)
+    print("O percentual de aumento do seu salário foi de: 15%")
+    print("O valor do aumento é de: R$", valoraumento)
+    print("Seu salário após o aumento é de: R$", ajustequinze, "\n")
+
+if salario > 700 and salario <= 1500:
+
+    ajustedez = (salario * 0.10) + salario
+    valoraumento = salario * 0.10
+
+    print("Seu salário antes do reajuste era de: R$", salario)
+    print("O percentual de aumento do seu salário foi de: 10%")
+    print("O valor do aumento é de: R$", valoraumento)
+    print("Seu salário após o aumento é de: R$", ajustedez, "\n")
