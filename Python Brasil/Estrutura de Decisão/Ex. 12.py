@@ -28,10 +28,21 @@ hora = int (input("Informe a quantidade de horas trabalhadas: "))
 valorHora = int (input("Informe o valor da sua hora: "))
 
 salarioB = hora * valorHora
+
+ir = 0
 inss = salarioB * 0.1
+fgts = salarioB * 0.11
+
+descontos = ir + inss + fgts
+salarioL = salarioB - descontos
+
 
 print("\n")
 
 if salarioB <= 900:
     print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
-    print("(-) INSS (10%)")
+    print("(-) IR -> ISENTO")
+    print("(-) INSS (10%) R$", inss) 
+    print("FGTS (11%) R$", fgts)
+    print("Total de descontos: R$", descontos)
+    print("Salário Líquido: R$", salarioL, "\n")
