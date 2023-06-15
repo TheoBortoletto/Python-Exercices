@@ -24,4 +24,13 @@ if media >= 9.0 and media <= 10.0:
 if media >= 7.5 and media < 9.0:
     print("Conceito - B")
 
-if media
+if media >= 6.0 and media < 7.5:
+    print("Conceito - C")
+
+if media >= 4.0 and media < 6.0:
+    print("Conceito - D")
+
+if media < 4.0:
+    print("Conceito - E")
+
+print("\n")
