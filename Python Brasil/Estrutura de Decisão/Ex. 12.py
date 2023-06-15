@@ -30,11 +30,23 @@ valorHora = int (input("Informe o valor da sua hora: "))
 salarioB = hora * valorHora
 
 ir = 0
-inss = salarioB * 0.1
+ircinco = salarioB * 0.05
+irdez = salarioB * 0.10
+irvinte = salarioB * 0.20
+
+inss = salarioB * 0.10
 fgts = salarioB * 0.11
 
-descontos = ir + inss + fgts
+descontos = ir + inss
+descontosc = ircinco + inss
+descontosd = irdez + inss 
+descontosv = irvinte + inss
+
 salarioL = salarioB - descontos
+salarioLC = salarioB - descontosc
+salarioLD = salarioB - descontosd
+salarioLV = salarioB - descontosv
+
 
 
 print("\n")
@@ -46,3 +58,19 @@ if salarioB <= 900:
     print("FGTS (11%) R$", fgts)
     print("Total de descontos: R$", descontos)
     print("Salário Líquido: R$", salarioL, "\n")
+
+if salarioB > 900 and salarioB <= 1500:
+    print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
+    print("(-) IR (5%) R$", ircinco)
+    print("(-) INSS (10%) R$", inss) 
+    print("FGTS (11%) R$", fgts)
+    print("Total de descontos: R$", descontosc)
+    print("Salário Líquido: R$", salarioLC, "\n")
+
+if salarioB > 1500 and salarioB <= 2500:
+    print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
+    print("(-) IR (5%) R$", ircinco)
+    print("(-) INSS (10%) R$", inss) 
+    print("FGTS (11%) R$", fgts)
+    print("Total de descontos: R$", descontosc)
+    print("Salário Líquido: R$", salarioLC, "\n")  
