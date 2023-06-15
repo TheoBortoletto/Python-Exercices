@@ -69,8 +69,16 @@ if salarioB > 900 and salarioB <= 1500:
 
 if salarioB > 1500 and salarioB <= 2500:
     print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
-    print("(-) IR (5%) R$", ircinco)
+    print("(-) IR (10%) R$", irdez)
     print("(-) INSS (10%) R$", inss) 
     print("FGTS (11%) R$", fgts)
-    print("Total de descontos: R$", descontosc)
-    print("Salário Líquido: R$", salarioLC, "\n")  
+    print("Total de descontos: R$", descontosd)
+    print("Salário Líquido: R$", salarioLD, "\n")  
+
+if salarioB > 1500 and salarioB <= 2500:
+    print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
+    print("(-) IR (10%) R$", irdez)
+    print("(-) INSS (10%) R$", inss) 
+    print("FGTS (11%) R$", fgts)
+    print("Total de descontos: R$", descontosd)
+    print("Salário Líquido: R$", salarioLD, "\n")  
