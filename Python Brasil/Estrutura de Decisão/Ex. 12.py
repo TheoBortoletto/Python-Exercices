@@ -75,10 +75,10 @@ if salarioB > 1500 and salarioB <= 2500:
     print("Total de descontos: R$", descontosd)
     print("Salário Líquido: R$", salarioLD, "\n")  
 
-if salarioB > 1500 and salarioB <= 2500:
+if salarioB > 2500:
     print("Salário Bruto:", '(',hora, "*", valorHora,'):', "R$", salarioB)
-    print("(-) IR (10%) R$", irdez)
+    print("(-) IR (20%) R$", irvinte)
     print("(-) INSS (10%) R$", inss) 
     print("FGTS (11%) R$", fgts)
-    print("Total de descontos: R$", descontosd)
-    print("Salário Líquido: R$", salarioLD, "\n")  
+    print("Total de descontos: R$", descontosv)
+    print("Salário Líquido: R$", salarioLV, "\n")  
