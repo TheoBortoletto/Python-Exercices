@@ -5,10 +5,10 @@ print("\n\t Exercício 3 \n")
 
 string = str (input("Digite 'F' para feminino e 'M' para masculino: "))
 
-if string == "f" or str == "F":
+if string == "f":
     print("Feminino. \n")
 
-if string == "m" or str == "M":
+if string == "m":
     print("Masculino. \n")
 
 else:
