@@ -19,3 +19,11 @@ salario = float (input("Informe o seu salário: "))
 while salario <= 0:
     salario = float (input("Informe o seu salário: "))
 
+sex = str (input("Informe a inicial do seu sexo: "))
+while sex != "f" and sex != "m":
+    sex = str (input("Informe a inicial do seu sexo: "))
+
+estadoC = str (input("Informe a inicial do seu Estado Civil: "))
+while estadoC != "s" and estadoC != "c" and estadoC != "v" and estadoC != "d":
+    estadoC = str (input("Informe a inicial do seu Estado Civil: "))
+
