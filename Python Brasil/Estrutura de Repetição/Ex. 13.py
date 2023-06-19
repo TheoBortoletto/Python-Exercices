@@ -11,20 +11,7 @@ i = 1
 potencia = 1
 
 while i <= expoente:
-    result = base * base
-    result = base * result
+    potencia *= base
+    i += 1
 
-print(result)
-
-
-# base=int(input("Base: "))
-# expoente=int(input("Expoente: "))
-
-# potencia=1
-# i=1
-
-# while i <= expoente:
-#     potencia *= base
-#     i +=1
-
-# print(base,"^",expoente,"=",potencia)
+print(potencia)
