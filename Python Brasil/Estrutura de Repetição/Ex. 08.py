@@ -5,3 +5,10 @@ print("\n\t Exercício 8 \n")
 x = 0
 num = []
 
+while x < 5:
+    num.append (int(input("Digite um número: ")))
+    x += 1
+
+media = sum(num) / 5
+
+print("A media dos valores é: ", media, "\n")
