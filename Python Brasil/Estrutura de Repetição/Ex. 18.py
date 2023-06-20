@@ -20,3 +20,4 @@ print("A soma dos valores da lista é: ", sum(num), "\n")
 
 
 
+
