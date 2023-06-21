@@ -19,4 +19,24 @@ perguntas = ["Telefonou para a vítima?", "Esteve no local do crime?", "Mora per
 
 pontos = 0
 
+print("Digite 's' para Sim e 'n' para Não: \n")
 
+for pergunta in perguntas:
+    ponto = str (input (f" {pergunta}: "))
+
+    if ponto == "s":
+        pontos += 1
+
+print("\n")
+
+if pontos == 0 or pontos == 1:
+    print("Voocê é inocente.\n")
+
+if pontos == 2:
+    print("Você é suspeito.\n")
+
+if pontos == 3 or pontos == 4:
+    print("Você é cúmplice.\n")
+
+if pontos == 5:
+    print("Você é o assasino.\n")
