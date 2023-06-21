@@ -8,8 +8,7 @@ acima da média anual, e em que mês elas ocorreram
 
 meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 temperaturas = []
-cont = 0
-i = 0
+
 
 for mes in meses:
     temperatura = float (input(f"Informe a temperatura do mês de {mes}: "))
