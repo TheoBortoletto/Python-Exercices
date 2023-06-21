@@ -15,11 +15,19 @@ Calcule e mostre a quantidade de valores abaixo de sete;
 Encerre o programa com uma mensagem;'''
 
 numeros = []
-numUser = []
 
-for num in numeros:
-    numUser = float (input(f"Digite um número: {num}"))
-    numeros.append(num)
+cont = 0
+
+while cont > -1:
+    numUser = float (input("Digite a sua nota: "))
+    numeros.append(numUser)
+    if numUser == -1:
+        numeros.pop()
+        break
+    else:
+        cont += 1
+
+print(numeros)
 
 
     
