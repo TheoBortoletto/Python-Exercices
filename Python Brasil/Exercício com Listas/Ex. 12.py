@@ -10,5 +10,20 @@ altura = []
 cont = 1
 
 while cont <= 5:
-    print("Aluno:", cont+ '':')
+    print("Aluno", cont,":")
     idade.append(int (input("Informe a sua idade: ")))
+    altura.append(float (input("Informe a sua altura: ")))
+    cont += 1
+
+
+for x in idade:
+    if x < 13:
+        idade.append(x)
+
+print(idade)
+
+# alunos = []
+
+# mediaAltura = sum(altura) / 5
+
+# print(mediaAltura)
