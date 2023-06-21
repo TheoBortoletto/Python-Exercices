@@ -13,3 +13,13 @@ Calcule e mostre a média dos valores;
 Calcule e mostre a quantidade de valores acima da média calculada;
 Calcule e mostre a quantidade de valores abaixo de sete;
 Encerre o programa com uma mensagem;'''
+
+numeros = []
+numUser = []
+
+for num in numeros:
+    numUser = float (input(f"Digite um número: {num}"))
+    numeros.append(num)
+
+
+    
