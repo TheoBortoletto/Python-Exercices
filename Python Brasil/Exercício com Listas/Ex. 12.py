@@ -7,23 +7,30 @@ de 13 anos possuem altura inferior à média de altura desses alunos.
 
 idade = []
 altura = []
+idadeMaiorTreze = []
+
+perguntaI = []
+perguntaA = []
+
 cont = 1
+
+
+
 
 while cont <= 5:
     print("Aluno", cont,":")
-    idade.append(int (input("Informe a sua idade: ")))
-    altura.append(float (input("Informe a sua altura: ")))
+    perguntaI.append(int (input("Informe a sua idade: ")))
+    perguntaA.append(float (input("Informe a sua altura: ")))
     cont += 1
 
+mediaAltura = sum(perguntaA) / 5
+   
+if perguntaA < mediaAltura:
+    idadeMaiorTreze.append(perguntaA)
 
-for x in idade:
-    if x < 13:
-        idade.append(x)
 
-print(idade)
+print(idadeMaiorTreze)
 
-# alunos = []
 
-# mediaAltura = sum(altura) / 5
 
-# print(mediaAltura)
+
