@@ -48,5 +48,3 @@ print("Quantidade de aluos que são maiores de 13 anos: ", len(aluno_13), "\n")
 print("Altura dos alunos que são maiores de 13 anos: ", aluno_13, "\n") 
 
 print("Quantidade de alunos que possuem a altura inferior à media e altura: ", len(media_13), "\n")
-
-
