@@ -26,8 +26,6 @@ for i in range(30):
         aluno_13.append(alturas[i]) #! Se a condição for verdadeira, 
                                     #! pega as alturas dos que são maiores de 13.
 
-print("\nAltura dos alunos que são maiores de 13 anos: ", aluno_13) 
-
 media = sum(aluno_13) / len(aluno_13) #! Faz a soma das alturas e
                                       #! divide ela pela quantidade 
                                       #! de itens que tem dentro dessa lista
@@ -36,7 +34,19 @@ media = sum(aluno_13) / len(aluno_13) #! Faz a soma das alturas e
 for i in range(len(aluno_13)): #! Percorre o tanto de itens que contém nessa lista
                                #! Nesta lista só há as alturas dos que tem mais de 13
                                
-    if aluno_13[i] < media: #!
-        media_13.append(aluno_13[i])
+    if aluno_13[i] < media: #! Verifica se a altura dos alunos maiores de 13 anos é
+                            #! menor que a média.
+
+        media_13.append(aluno_13[i]) #! Se a condição for verdadeira, pega todos
+                                     #! com a média inferior a média das altura dos
+                                     #! alunos e coloca na lista 'media_13'
+
+print("\nIdade dos 30 alunos: ", idades, "\n")
+print("Altura dos 30 alunos: ", alturas, "\n")
+
+print("Quantidade de aluos que são maiores de 13 anos: ", len(aluno_13), "\n")
+print("Altura dos alunos que são maiores de 13 anos: ", aluno_13, "\n") 
+
+print("Quantidade de alunos que possuem a altura inferior à media e altura: ", len(media_13), "\n")
 
 
