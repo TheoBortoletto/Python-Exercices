@@ -13,9 +13,14 @@ i = 0
 
 for mes in meses:
     temperatura = float (input(f"Informe a temperatura do mês de {mes}: "))
+    temperaturas.append(temperatura)
 
-temperaturas.append(temperatura)
-    
 media = sum(temperaturas) / len(temperaturas)
 
-print(media)
+print("\n")
+
+for i, temperatura in enumerate(temperaturas):
+    if temperatura > media:
+        print(f"{meses[i]} teve uma temperatura de {temperatura}°C, acima da média anual de {media}°C.")
+
+print("\n")
