@@ -15,7 +15,7 @@ Calcule e mostre a quantidade de valores abaixo de sete;
 Encerre o programa com uma mensagem;'''
 
 numeros = []
-
+acimaMedia = []
 cont = 0
 
 while cont > -1:
@@ -43,10 +43,9 @@ media = sum(numeros) / len(numeros)
 
 print("Médias dos valores: ", media, "\n")
 
+for num in numeros:
+    if num > media:
+        acimaMedia.append(num)
 
-
-
-
-
-
+print(acimaMedia)
     
