@@ -10,12 +10,13 @@ Exiba todos os valores na ordem em que foram informados, um ao lado do outro; OK
 Exiba todos os valores na ordem inversa à que foram informados, um abaixo do outro; OK
 Calcule e mostre a soma dos valores; OK
 Calcule e mostre a média dos valores; OK
-Calcule e mostre a quantidade de valores acima da média calculada;
+Calcule e mostre a quantidade de valores acima da média calculada; ok
 Calcule e mostre a quantidade de valores abaixo de sete;
 Encerre o programa com uma mensagem;'''
 
 numeros = []
 acimaMedia = []
+abaixoSete = []
 cont = 0
 
 while cont > -1:
@@ -46,6 +47,11 @@ print("Médias dos valores: ", media, "\n")
 for num in numeros:
     if num > media:
         acimaMedia.append(num)
+    if num < 7:
+        abaixoSete.append(num)
 
-print(acimaMedia)
+
+print("Valores que estão acima da média: ", acimaMedia, "\n")
+
+print("Valores abaixo de 7: ", abaixoSete, "\n")
     
