@@ -15,3 +15,6 @@ print("1/3 do valor total:%.2f" % parcela)
 
 print("As parcelas ficam 12x de:%.2f" % dozeVzs, "\n")
 
+# AirPods - 5 de junho -> R$4,93 
+# iPhone - 
+
