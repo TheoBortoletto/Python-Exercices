@@ -9,12 +9,11 @@ print("\n")
 confirmEmail = str (input("Confirme o seu E-mail: "))
 confirmSenha = str (input("Confirme a sua Senha: "))
 
-print("\n")
-
 cont = 0
 
 while confirmEmail != email or confirmSenha != senha:
-    print("\n\tO E-mail ou Senha não coincidem, tente novamente.\n")
+    print("\n")
+    print("\t O E-mail ou Senha não coincidem, tente novamente.\n")
     
     confirmEmail = str (input("Confirme o seu E-mail: "))
     confirmSenha = str (input("Confirme a sua Senha: "))
