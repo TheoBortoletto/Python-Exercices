@@ -17,7 +17,7 @@ while cont <= 4:
     notas.append(Notas)
     cont += 1
 print("\n")
-media = sum(notas) / 4
+media = sum(notas) / len(notas)
 
 if media >= 7:
     print("Sua média é", media, "você foi aprovado.")
