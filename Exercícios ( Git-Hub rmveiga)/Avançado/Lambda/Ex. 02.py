@@ -1,2 +1,2 @@
-print("\n\t Exercício 2")
+print("\n\t Exercício 2 \n")
 
