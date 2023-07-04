@@ -33,6 +33,8 @@ import random
 
 randNum = random.randrange(0, 10)
 tentativa = 1
+pontos = 0
+
 print(randNum, "\n")
 
 while tentativa <= 5:
@@ -41,5 +43,22 @@ while tentativa <= 5:
         print("Você acertou!!! \n")
         break
     tentativa += 1
+else:
+    print("\nNúmero máximo de tentativas atingido.")
     
+if palpite == randNum and tentativa == 1:
+    pontos = 100
+    
+if palpite == randNum and tentativa == 2:
+    pontos = 80
 
+if palpite == randNum and tentativa == 3:
+    pontos = 60
+
+if palpite == randNum and tentativa == 4:
+    pontos = 40
+
+if palpite == randNum and tentativa == 5:
+    pontos = 20
+    
+print(f"Total de pontos: {pontos}.\n")
