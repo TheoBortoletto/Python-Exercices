@@ -36,4 +36,5 @@ list = [54, 10, 29, 87, 7, 64]
 
 maiorValor = reduce(lambda n1, n2: n1 if n1 > n2 else n2, list)
 menorValor = reduce(lambda n1, n2: n1 if n1 < n2 else n2, list)
-print(f"O maior valor da sequência é {maiorValor} e o menor é {menorValor}")
+print(f"O maior valor da sequência é {maiorValor}. \n")
+print(f"O menor valor da sequência é {menorValor}. \n")
