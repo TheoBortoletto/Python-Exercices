@@ -26,3 +26,20 @@ o input correto.
 partida. Ao finalizar uma rodada, após o resultado final, 
 o jogo deve perguntar se o jogador quer iniciar uma nova 
 partida e, em caso negativo, encerrar a aplicação.'''
+
+print("\n\t JOGO DE ACERTE O NÚMERO: \n")
+
+import random
+
+randNum = random.randrange(0, 10)
+tentativa = 1
+print(randNum, "\n")
+
+while tentativa <= 5:
+    palpite = int (input(f"Tentativa {tentativa}: "))
+    if palpite == randNum:
+        print("Você acertou!!! \n")
+        break
+    tentativa += 1
+    
+
