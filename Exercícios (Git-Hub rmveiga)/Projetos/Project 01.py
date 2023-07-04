@@ -62,3 +62,5 @@ if palpite == randNum and tentativa == 5:
     pontos = 20
     
 print(f"Total de pontos: {pontos}.\n")
+
+jogarNovamente = int (input("Deseja jogar novamente? (1)-SIM  (2)-NÃO: "))
