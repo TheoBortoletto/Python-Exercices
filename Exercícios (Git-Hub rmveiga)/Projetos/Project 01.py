@@ -27,40 +27,51 @@ partida. Ao finalizar uma rodada, após o resultado final,
 o jogo deve perguntar se o jogador quer iniciar uma nova 
 partida e, em caso negativo, encerrar a aplicação.'''
 
-print("\n\t JOGO DE ACERTE O NÚMERO: \n")
 
 import random
 
-randNum = random.randrange(0, 10)
-tentativa = 1
-pontos = 0
-
-print(randNum, "\n")
-
-while tentativa <= 5:
-    palpite = int (input(f"Tentativa {tentativa}: "))
-    if palpite == randNum:
-        print("Você acertou!!! \n")
-        break
-    tentativa += 1
-else:
-    print("\nNúmero máximo de tentativas atingido.")
+def game():
     
-if palpite == randNum and tentativa == 1:
-    pontos = 100
+    print("\n\t JOGO DE ACERTE O NÚMERO:")
     
-if palpite == randNum and tentativa == 2:
-    pontos = 80
+    randNum = random.randrange(0, 10)
+    tentativa = 1
+    pontos = 0
+    print(randNum, "\n")
 
-if palpite == randNum and tentativa == 3:
-    pontos = 60
+    while tentativa <= 5:
+        palpite = int (input(f"Tentativa {tentativa}: "))
+        if palpite == randNum:
+            print("Você acertou!!! \n")
+            break
+        tentativa += 1
+    else:
+        print("\nNúmero máximo de tentativas atingido.")
 
-if palpite == randNum and tentativa == 4:
-    pontos = 40
+    if palpite == randNum and tentativa == 1:
+        pontos = 100
 
-if palpite == randNum and tentativa == 5:
-    pontos = 20
-    
-print(f"Total de pontos: {pontos}.\n")
+    if palpite == randNum and tentativa == 2:
+        pontos = 80
 
-jogarNovamente = int (input("Deseja jogar novamente? (1)-SIM  (2)-NÃO: "))
+    if palpite == randNum and tentativa == 3:
+        pontos = 60
+
+    if palpite == randNum and tentativa == 4:
+        pontos = 40
+
+    if palpite == randNum and tentativa == 5:
+        pontos = 20
+
+    print(f"Total de pontos: {pontos}.\n")
+
+    jogarNovamente = int (input("Deseja jogar novamente? (1)-SIM  (2)-NÃO: "))
+    print("\n")
+
+    if jogarNovamente == 1:
+        game()
+    if jogarNovamente == 2:
+        print("ATÉ LOGO!!! \n")
+        exit()
+
+game()
