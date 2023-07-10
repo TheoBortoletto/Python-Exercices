@@ -12,4 +12,4 @@ if par(num):
 else:
     print(f"O número {num} é ímpar. \n")
 
-#* print(par(num), "\n"))
+#* print(par(num), "\n")
